@@ -1,0 +1,15 @@
+http:
+  routers:
+    # Brewdocs router.
+    brewdocs:
+      rule: "Host(`brewdocs.iv0ks.dev`)"
+      entryPoints:
+        - websecure
+      service: brewdocs
+      tls: { certResolver: namecheap }
+
+  services:
+    brewdocs:
+      loadBalancer:
+        servers:
+          - url: "http://host.docker.internal:8101/"
