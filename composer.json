@@ -7,7 +7,7 @@
         "php": ">=8.1"
     },
     "require-dev": {
-        "phpunit/phpunit": "^10.5",
+        "phpunit/phpunit": "^13.4",
         "friendsofphp/php-cs-fixer": "^3.64",
         "phpstan/phpstan": "^1.12"
     },
